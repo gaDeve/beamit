@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beamit - Fast Local File Transfer</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #09090b;
+            color: #fafafa;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 32px;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(255, 190, 11, 0.2);
+        }
+        
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ff006e, #fb5607, #ffbe0b, #00f5d4, #8338ec);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            color: #a1a1aa;
+            margin-bottom: 40px;
+        }
+        
+        .app-store-badge {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        
+        .app-store-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .app-store-badge img {
+            height: 54px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 80px 0;
+        }
+        
+        .feature {
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.2s;
+        }
+        
+        .feature:hover {
+            border-color: #3f3f46;
+            transform: translateY(-4px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        
+        .feature h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .feature p {
+            color: #71717a;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #1f1f23;
+            margin-top: 60px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+        
+        .footer-links a {
+            color: #71717a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: #fafafa;
+        }
+        
+        .copyright {
+            color: #52525b;
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 640px) {
+            h1 { font-size: 2.5rem; }
+            .tagline { font-size: 1.1rem; }
+            .hero { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <img src="icon.png" alt="Beamit" class="logo">
+            <h1>Beamit</h1>
+            <p class="tagline">The fastest way to share files between your devices.<br>No cloud. No limits. Just beam it.</p>
+            
+            <a href="https://apps.apple.com/app/beamit" class="app-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Transfer</h3>
+                <p>Direct device-to-device transfers at maximum speed. No waiting for uploads.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>100% Private</h3>
+                <p>Files never leave your network. No cloud servers, no data collection.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Cross Platform</h3>
+                <p>Works seamlessly between iPhone, iPad, Mac, and Android devices.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">∞</div>
+                <h3>No Limits</h3>
+                <p>No file size restrictions. No daily limits. No subscription required.</p>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+            </div>
+            <p class="copyright">© 2026 Omar Sharif. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
