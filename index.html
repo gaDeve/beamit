@@ -190,10 +190,94 @@
             font-size: 0.85rem;
         }
         
+        /* Security Section */
+        .security-section {
+            background: linear-gradient(135deg, #0f0f12 0%, #1a1a1f 100%);
+            border: 1px solid #27272a;
+            border-radius: 24px;
+            padding: 48px 40px;
+            margin: 40px 0 80px;
+        }
+        
+        .security-section h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #00f5d4;
+        }
+        
+        .security-intro {
+            text-align: center;
+            color: #a1a1aa;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .security-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .security-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .security-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        
+        .security-item h4 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #fafafa;
+        }
+        
+        .security-item p {
+            color: #71717a;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        
+        .security-badge {
+            background: linear-gradient(135deg, rgba(0, 245, 212, 0.1) 0%, rgba(131, 56, 236, 0.1) 100%);
+            border: 1px solid rgba(0, 245, 212, 0.3);
+            border-radius: 16px;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+        }
+        
+        .security-badge span {
+            font-size: 2.5rem;
+        }
+        
+        .security-badge p {
+            color: #a1a1aa;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        
+        .security-badge strong {
+            color: #00f5d4;
+        }
+        
         @media (max-width: 640px) {
             h1 { font-size: 2.5rem; }
             .tagline { font-size: 1.1rem; }
             .hero { padding: 60px 0; }
+            .security-section { padding: 32px 24px; }
+            .security-badge { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
@@ -253,6 +337,50 @@
                 <div class="feature-icon">∞</div>
                 <h3>No Limits</h3>
                 <p>No file size restrictions. No daily limits. No subscription required.</p>
+            </div>
+        </section>
+        
+        <!-- Security Section -->
+        <section class="security-section">
+            <h2>🛡️ Bank-Grade Security</h2>
+            <p class="security-intro">Beamit is built with security at its core. Your files are protected by multiple layers of enterprise-grade protection.</p>
+            
+            <div class="security-features">
+                <div class="security-item">
+                    <div class="security-icon">🔐</div>
+                    <h4>End-to-End Encryption</h4>
+                    <p>All transfers are encrypted using TLS with strong cryptographic protocols. Your data cannot be intercepted or read by anyone.</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🎯</div>
+                    <h4>Device Verification</h4>
+                    <p>Each device has a unique cryptographic identity. Beamit verifies the recipient before any transfer begins.</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🚫</div>
+                    <h4>Zero Trust Architecture</h4>
+                    <p>Every transfer requires explicit user approval. No file can be received without your permission.</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🌐</div>
+                    <h4>Local Network Only</h4>
+                    <p>Your files never touch the internet. Transfers happen directly between devices on your private network.</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🔑</div>
+                    <h4>Secure Tokens</h4>
+                    <p>Each transfer uses cryptographically random authorization tokens that cannot be guessed or forged.</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">⏱️</div>
+                    <h4>Auto-Expiring Sessions</h4>
+                    <p>Transfer authorizations automatically expire. No lingering access, no stale permissions.</p>
+                </div>
+            </div>
+            
+            <div class="security-badge">
+                <span>🏆</span>
+                <p><strong>No data collection. No analytics. No tracking.</strong><br>We literally cannot see your files because they never leave your network.</p>
             </div>
         </section>
         
